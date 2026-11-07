@@ -31,11 +31,11 @@ public:
     int& back(){
         return arr[size-1];
     } 
-    void vecSize(){
-        std::cout << size << '\n';
+    uint64_t vecSize(){
+        return size;
     }
-    void vecCap(){
-        std::cout << capacity << '\n';
+    uint64_t vecCap(){
+        return capacity;
     }
     void printVec(){
         for(int i=0; i<size; i++)
@@ -82,6 +82,8 @@ int main(){
     v.push_back(1);
     v.push_back(0);
     v.back()=15;
+    v.info();
+    v.pop_back();
     v.info();
 
     return 0;
